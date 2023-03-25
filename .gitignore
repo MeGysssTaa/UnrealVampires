@@ -1,7 +1,3 @@
-# Unreal
-*.uproject
-
-
 # Visual Studio 2015 user specific files
 .vs/
 
@@ -19,6 +15,7 @@
 *.so
 *.dylib
 *.dll
+
 
 # Fortran module files
 *.mod
@@ -49,9 +46,17 @@
 SourceArt/**/*.png
 SourceArt/**/*.tga
 
-# Binary Files
+# Binary Files for Load Str
+!Binaries/Win64/RoyalHeroes3DEditor.target
+!Binaries/Win64/UE4Editor.modules
+!Binaries/Win64/UE4Editor-RoyalHeroes3D-0004.dll
+!Binaries/Win64/UE4Editor-RoyalHeroes3D-9545.dll
+
+!Plugins/*/Binaries/*/*.dll
+Plugins/*/Binaries/*/*.pdb
+
 Binaries/*
-Plugins/*/Binaries/*
+#Plugins/*/Binaries/*
 
 # Builds
 Build/*
@@ -63,6 +68,7 @@ Build/*/**
 
 # Don't ignore icon files in Build
 !Build/**/*.ico
+!Build/**/*.png
 
 # Built data for maps
 *_BuiltData.uasset
@@ -76,28 +82,3 @@ Plugins/*/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
-
-
-# Common IntelliJ Platform excludes
-
-# User specific
-**/.idea/**/workspace.xml
-**/.idea/**/tasks.xml
-**/.idea/shelf/*
-**/.idea/dictionaries
-**/.idea/httpRequests/
-
-# Sensitive or high-churn files
-**/.idea/**/dataSources/
-**/.idea/**/dataSources.ids
-**/.idea/**/dataSources.xml
-**/.idea/**/dataSources.local.xml
-**/.idea/**/sqlDataSources.xml
-**/.idea/**/dynamic.xml
-
-# Rider
-# Rider auto-generates .iml files, and contentModel.xml
-**/.idea/**/*.iml
-**/.idea/**/contentModel.xml
-**/.idea/**/modules.xml
-
